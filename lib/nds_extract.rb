@@ -1,6 +1,6 @@
 # Provided, don't edit
 require 'directors_database'
-
+require "pry"
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
 
@@ -28,6 +28,7 @@ def movie_with_director_name(director_name, movie_data)
     :studio => movie_data[:studio],
     :director_name => director_name
   }
+  # pp movie_data
 end
 
 
@@ -47,11 +48,15 @@ def movies_with_director_key(name, movies_collection)
   #
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
-  # movie_with_director_name method
+  # movie_with_director_name
+  # binding.pry
+  
+  
 end
 
 
 def gross_per_studio(collection)
+  #binding.pry
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
