@@ -51,7 +51,7 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name
   # binding.pry
   count1 = 0
-  puts movie_with_director_name(name, movies_collection[0][])
+  puts movie_with_director_name(name, movies_collection[0])
   
 end
 
